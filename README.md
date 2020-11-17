@@ -3,7 +3,14 @@
 PyTorch Implementation of BERT4NILM: A Bidirectional Transformer Model for Non-Intrusive Load Monitoring
 
 
-## Introduction
+## Data
+
+The csv datasets could be downloaded here: [REDD](http://redd.csail.mit.edu/) and [UK-DALE](https://jack-kelly.com/data/)
+
+We took the liberty of modifying certain appliance names to 'dishwasher', 'fridge', 'microwave', 'washing_machine' and 'kettle' in the 'labels.dat' file, see data folder
+
+
+## Training
 
 This is the PyTorch implementation of BERT4NILM, a bidirectional encoder representations from rransformers for energy disaggregation, in this repository we provide the BERT4NILM model as well as data functions for low frequency REDD dataset / UK Dale dataset, run following command to train an initial model, hyper-parameters (as well as appliances) could be tuned in utils.py, test will run after training ends:
 
@@ -11,12 +18,12 @@ This is the PyTorch implementation of BERT4NILM, a bidirectional encoder represe
 python train.py
 ```
 
-The trained model state dict will be saved under 'experiments/dataset-name/best_acc_model.pth'.
+The trained model state dict will be saved under 'experiments/dataset-name/best_acc_model.pth'
 
 
 ## Performance
 
-Our models are trained 100 / 20 epochs repspectively for appliances from REDD and UK-DALE dataset, all other parameters could be found in 'train.py' and 'utils.py'.
+Our models are trained 100 / 20 epochs repspectively for appliances from REDD and UK-DALE dataset, all other parameters could be found in 'train.py' and 'utils.py'
 
 ### REDD
 
