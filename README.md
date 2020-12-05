@@ -33,7 +33,8 @@ Our models are trained 100 / 20 epochs repspectively for appliances from REDD an
 
 <img src=uk-dale.png width=500>
 
-### Citing 
+
+## Citing 
 Please cite the following paper if you use our methods in your research:
 ```
 @inproceedings{yue2020bert4nilm,
@@ -44,6 +45,7 @@ Please cite the following paper if you use our methods in your research:
   year={2020}
 }
 ```
+
 
 ## Acknowledgement
 
